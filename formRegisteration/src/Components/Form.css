@@ -1,0 +1,80 @@
+/* Form.css */
+body {
+    background-image: url('https://t3.ftcdn.net/jpg/08/10/89/84/360_F_810898439_M7GxeIoecPFWfUaIekY0Qw3q4Kh2l0yO.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+
+    margin-left: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box {
+
+    background: rgba(255, 255, 255, 0.19);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #bd0ee953;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+}
+
+.gender-options label {
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #60479559;
+    border: none;
+    color: rgba(255, 255, 255, 0.998);
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #604795;
+}
