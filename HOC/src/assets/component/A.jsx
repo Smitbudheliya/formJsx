@@ -6,10 +6,10 @@ const A = ({ no, inc }) => {
         <>
             <h1>Counter-App A</h1>
             <h2>Count: {no}</h2>
-            <button onClick={() => inc(WrappedA)}>+</button>
+            <button onClick={() => inc()}>+</button>
         </>
     );
 };
-let WrappedA = Counter(A);
+let WrappedA = Counter(A);                            
 
 export default A;
