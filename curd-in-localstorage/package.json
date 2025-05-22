@@ -1,5 +1,5 @@
 {
-  "name": "dynamicform",
+  "name": "curd-in-localstorage",
   "private": true,
   "version": "0.0.0",
   "type": "module",
