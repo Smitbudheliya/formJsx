@@ -1,0 +1,95 @@
+.blog-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-date {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.blog-date::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background: white;
+  border-radius: 10px;
+  z-index: -1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.day {
+  font-size: 18px;
+}
+
+.month {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.blog-content {
+  padding: 16px;
+  position: relative;
+}
+
+.blog-meta {
+  font-size: 14px;
+  color: #666;
+  position: relative;
+}
+
+.blog-meta::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #3b82f6;
+}
+
+.blog-title {
+  font-size: 18px;
+  margin: 8px 0 12px;
+  font-weight: 600;
+}
+
+.blog-link {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}

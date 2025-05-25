@@ -1,0 +1,52 @@
+.allbutton{
+    background-color:transparent;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid rgba(7, 7, 7, 0.226);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    background-image: url('https://maraviyainfotech.com/projects/carrot/carrot-v22/carrot-html/assets/img/banner/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-block: 100px !important;
+}
+
+.banner h1 {
+    font-weight: 800;
+    font-size: 48px;
+    font-size: 3rem;
+}
+
+.banner .subheading {
+    font-size: 1rem;
+    color: #666;
+}
+
+.banner .cta-btn {
+    background-color: #5cb98b;
+    color: white;
+    font-weight: 600;
+}
+
+.banner .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner .decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    width: 80px;
+}
