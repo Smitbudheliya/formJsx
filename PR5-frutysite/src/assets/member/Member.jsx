@@ -1,5 +1,3 @@
-import React from "react";
-
 const Members = [
   {
     name: "Stephen Smith",
@@ -38,23 +36,23 @@ const Member = () => {
   };
 
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5 bg-white">
       <div className="container text-center mb-5 pb-5">
        <h1 style={{fontSize:35}}>Great Words From People</h1>
         <p style={{fontSize:16, color:"#7A7A7A"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br />incididunt ut labore lacus vel facilisis.</p>
       </div>
 
       <div className="container">
-        <div className="row g-4">
+        <div className="row g-4 ">
           {Members.map((t, index) => (
-            <div key={index} className="col-12 col-md-6 col-lg-4">
-              <div className="card h-100 shadow-sm border-0 position-relative pt-5">
-                <div className="d-flex justify-content-center position-absolute top-0 start-50 translate-middle">
+            <div key={index} className="col-12 col-md-6 col-lg-4 ">
+              <div className="card h-100 shadow-sm border-0 position-relative pt-5 bg-light">
+                <div className="d-flex justify-content-center position-absolute top-0 start-50 translate-middle ">
                   <img
                     src={t.image}
                     alt={t.name}
-                    className="rounded-circle border border-white shadow"
-                    style={{ width: "96px", height: "96px", objectFit: "cover" }}
+                    className="rounded-circle border-5 border-white shadow"
+                    style={{ width: "96px",height: "96px", objectFit: "cover" }}
                   />
                 </div>
                 <div className="card-body text-center mt-5">

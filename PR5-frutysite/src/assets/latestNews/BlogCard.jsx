@@ -5,7 +5,7 @@ const BlogCard = ({ title, date, month, category, author, image }) => {
     <>
      
 
-      <div className="blog-card">
+      <div className="blog-card bg-light d-flex flex-column justify-content-between align-items-center">
 
         <div className="blog-content">
           <p className="blog-meta">By {author} • {category}</p>
