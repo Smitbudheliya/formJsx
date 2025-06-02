@@ -9,16 +9,26 @@
     text-decoration: none;
 }
 
-.banner {
-    position: relative;
-    overflow: hidden;
+nav{
+    background-color: rgba(253, 253, 255, 0.432);
 }
 
-.banner-img {
-    background-image: url('https://maraviyainfotech.com/projects/carrot/carrot-v22/carrot-html/assets/img/banner/banner.jpg');
-    background-position: center;
+
+
+.banner {
+     background-image: url('https://media.gucci.com/dynamic/b3c8/DchRogDaqhY8kaCtOqhz_GysW2bzxRYkSh8Y1Wv_uGbjP8ESIuJQC_AJ5zMpI9YHmTHTksFl72V1LbsYA_9nfbtuZ1hYfNsBFa6J0XRSa124pA2bTXjSCwYIBZaf2f5tubXRBj1z8Ea8_EfPDMed6+TMyRN40QMo+IS46gdIdNpG2J3fXthjIBJi_LevqMVMORh0mfhkP_3txiAsetl9AaEpoEyENn8blAQ+64CfGwmG+MzZKQT45LFNYCinjzCi3PgwdPgqU3PjshNs3UezU+2qJ9yWs9Lio5rhTphj1FbEP7gWK8c6ZsnIKyxWD4mHWbvsW1O8d8ek2Cab33ckHBHm5YOsAIA7n52wE3GG81gzmgElWVxa+2rUUn3dAXJCNRIR_Ois7uJkrqxZqVZbtQ==/HP_Hero-FullBleed-Desktop_Gucci-LIDO-TIERI-APR25-56J-07-10-JIM2-8bit-JIM3-EXT_001_Default.png');
+    position: relative;
+    overflow: hidden;
+     background-position-y: top;
+     background-repeat: no-repeat;
     background-size: cover;
-    padding-block: 100px !important;
+
+    
+}
+
+.banner-img{
+    padding: 250px;
+ /* position: absolute; */
 }
 
 .banner h1 {

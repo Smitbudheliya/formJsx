@@ -1,0 +1,250 @@
+{
+     "product": [
+    {
+      "men": [
+        {
+          "clothes": [
+            {
+              "id": 1,
+              "name": "Men Solid Round Neck Cotton T-Shirt",
+              "brand": "Roadster",
+              "category": "T-Shirts",
+              "price": 499,
+              "image": "https://media.gucci.com/style/White_South_0_160_316x316/1746033327/835220_XDDCY_4452_002_100_0000_Light-Washed-denim-shirt-with-GG-insert.jpg"
+            },
+            {
+              "id": 2,
+              "name": "Men Slim Fit Solid Formal Shirt",
+              "brand": "Levi's",
+              "category": "Jeans",
+              "price": 999,
+              "image": "https://media.gucci.com/style/White_South_0_160_316x316/1746030702/833305_ZAS81_2137_002_100_0000_Light-GG-canvas-jacket.jpg"
+            },
+            {
+              "id": 3,
+              "name": "amiri jazz wolf t-shirt",
+              "brand": "Highlander",
+              "category": "Shirts",
+              "price": 999,
+              "image": "https://media.gucci.com/style/White_South_0_160_316x316/1743615063/820358_XDDBG_4759_002_100_0000_Light-Relaxed-fit-denim-shirt.jpg"
+            },
+            {
+              "id": 4,
+              "name": "amiri hollywood t-shirt",
+              "brand": "Puma",
+              "category": "Track Pants",
+              "price": 1499,
+              "image": "https://media.gucci.com/style/White_South_0_160_316x316/1746031534/828126_XDDBB_3058_002_100_0000_Light-Bleached-GG-cotton-denim-jacquard-shirt.jpg"
+            }
+          ],
+          "watches": [
+            {
+              "id": 1,
+              "brand": "Rolex",
+              "model": "Submariner",
+              "price": 9500,
+              "description": "Luxury diving watch with classic design.",
+              "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRWutQqux0xzTZXGH-d8JcZSUFlf0KGvFTMmGdByk0cxnLKP3YVzgpp9Bb95Z4JCwdd6hRY8DrGElhUgrukfG67yG-lz9gnuZ9mkwa_wfx8COyaI7OZ_C83Sw",
+              "available": true
+            },
+            {
+              "id": 2,
+              "brand": "Omega",
+              "model": "Speedmaster",
+              "price": 6300,
+              "description": "The iconic moonwatch worn by astronauts.",
+              "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTNfI-Y2DpPt_UEqJt3Clr6O7-0R3xjxEp26y6c7dQVyiaVajOSOFcfnBbSWWMMVnFOU8yLGIIULRH6vP-4sta5Z_VnQoa0pe7DbMTm-CFh4tSgB9pFJJ75",
+              "available": true
+            },
+            {
+              "id": 3,
+              "brand": "Tag Heuer",
+              "model": "Carrera",
+              "price": 4200,
+              "description": "Sporty and elegant, designed for motorsport fans.",
+              "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0XqP8oxypJAcUMS_r2MPbYofw-2SOYsI1QxME6IpmC9sw5csA9tyIdRxu88YMXRVX1gh_dwydKU26j_qrt_HrA2QLjvn04ycQm_PiSXJChU8t4TKTFI7S",
+              "available": false
+            },
+            {
+              "id": 4,
+              "brand": "Seiko",
+              "model": "Prospex",
+              "price": 1200,
+              "description": "Reliable Japanese diving watch at a great value.",
+              "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBDzwzmCLDWO8mOotNPnKwwiSbbocI9M0STD-bSTMmNwyjSBV8_46slAG5Bvhib7YLIi-ZgbQdkSkE8d2i8N_jTGyVpgyLzoWRZwSaUs6B",
+              "available": true
+            }
+          ],
+          "sportShoes": [
+            {
+              "id": 1,
+              "brand": "Nike",
+              "model": "ZoomX Vaporfly NEXT%",
+              "price": 15848.85,
+              "description": "Elite racing shoes built for speed with ZoomX foam.",
+              "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT4GD9_QxMXwmEr8V4AnHS0jdq1JsnnkxH4VT7plgZNx_ZFmoRtZzBNvzVYt59yc7eAvV8bgJRbfAKbeFFqm-r_MyghuJLT8wyOSMO9GgzukxxwAYywQZNHAQ",
+              "available": true,
+              "category": "Running"
+            },
+            {
+              "id": 2,
+              "brand": "Adidas",
+              "model": "Adizero Adios Pro 3",
+              "price": 63056.83,
+              "description": "High-performance running shoes with carbon rods for propulsion.",
+              "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQcd1xcuyDsjHAbDsqkSWs4pxCxLT-YGgQf5q5P6ZxG_BgyB1fpfcpwrADbL2no9C7_OShtj5iHkp3-I50lHdGEygCVMKPg-aFm2ANiT3p3V1g0fJP9oNg_vFo",
+              "available": true,
+              "category": "Running"
+            },
+            {
+              "id": 3,
+              "brand": "ASICS",
+              "model": "Gel-Kayano 30",
+              "price": 12797,
+              "description": "Stability running shoes with advanced cushioning.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1501263907/500877_DRW00_9522_002_100_0000_Light.jpg",
+              "available": false,
+              "category": "Running"
+            },
+            {
+              "id": 5,
+              "brand": "Puma",
+              "model": "Deviate Nitro 2",
+              "price": 7199,
+              "description": "Lightweight and responsive shoe for long-distance runs.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1580402705/429446_02JP0_9064_002_100_0000_Light.jpg",
+              "available": true,
+              "category": "Running"
+            }
+          ]
+        }
+      ],
+      "women": [
+        {
+          "Watches": [
+            {
+              "id": 1,
+              "brand": "Michael Kors",
+              "model": "Runway MK5774",
+              "price": 10319.98,
+              "description": "Stylish and sleek, with a gold-tone stainless steel bracelet.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1719864238/796858_I16F0_8591_001_100_0000_Light.jpg",
+              "available": true
+            },
+            {
+              "id": 2,
+              "brand": "Fossil",
+              "model": "Hybrid HR Collider",
+              "price": 4198.50,
+              "description": "Smart hybrid watch that blends tech with classic analog style.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1441967431/404233_I86E0_8646_001_100_0000_Light.jpg",
+              "available": true
+            },
+            {
+              "id": 3,
+              "brand": "Gucci",
+              "model": "G-Timeless",
+              "price": 59400,
+              "description": "Luxury Italian design with elegant diamonds and a stainless steel case.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1740764711/832426_IEXA0_8759_001_100_0000_Light.jpg",
+              "available": false
+            },
+            {
+              "id": 4,
+              "brand": "Kate Spade",
+              "model": "Metro Gold-tone",
+              "price": 43669,
+              "description": "Chic and minimalistic with a sleek gold-tone design.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1441967431/404233_I86E0_8646_001_100_0000_Light.jpg",
+              "available": true
+            }
+          ],
+          "Shoes": [
+            {
+              "id": 1,
+              "brand": "Steve Madden",
+              "model": "Carrson Heels",
+              "price": 12000,
+              "description": "Elegant pointed toe heels with a slim, high heel perfect for formal events.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1743011114/794718_FAB10_6257_002_090_0000_Light.jpg",
+              "available": true,
+              "category": "Heels"
+            },
+            {
+              "id": 3,
+              "brand": "Ugg",
+              "model": "Kendra Boots",
+              "price": 3160,
+              "description": "Comfortable and warm suede boots, perfect for cold weather.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1742577432/835313_BKO00_9540_002_090_0000_Light.jpg",
+              "available": true,
+              "category": "Boots"
+            },
+            {
+              "id": 4,
+              "brand": "Chanel",
+              "model": "Camellia Pumps",
+              "price": 1166,
+              "description": "Luxurious leather pumps with iconic Camellia flower detail. Elegant and timeless.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1744911941/836044_FAD88_1046_002_090_0000_Light.jpg",
+              "available": false,
+              "category": "Heels"
+            },
+            {
+              "id": 5,
+              "brand": "Prada",
+              "model": "Brushed Leather Booties ",
+              "price": 7289.10,
+              "description": "Chic ankle boots made of luxurious leather, designed for a polished and fashionable look.",
+              "image": "https://media.gucci.com/style/White_South_0_160_470x470/1743012137/841657_DKT00_7100_002_090_0000_Light.jpg",
+              "available": false,
+              "category": "Boots"
+            }
+          ],
+          "clothes": [
+            {
+              "id": 1,
+              "brand": "Zara",
+              "model": "Checked Blazer",
+              "price": 3699,
+              "description": "A chic and tailored checked blazer to elevate your office look.",
+              "image": "https://cdn.shopify.com/s/files/1/1056/1394/files/c118b8d6-8dbe-4538-90ac-af580c53aec2.jpg?v=1747114224&width=760&height=1014&crop=center",
+              "available": true,
+              "category": "Outerwear"
+            },
+            {
+              "id": 2,
+              "brand": "Uniqlo",
+              "model": "Wool Blend Overcoat",
+              "price": 2267,
+              "description": "Classic wool blend overcoat for a timeless, elegant look.",
+              "image": "https://cdn.shopify.com/s/files/1/1056/1394/files/39012f1c-6aab-49c5-9da1-b21af8b4cfda.jpg?v=1747114789&width=760&height=1014&crop=center",
+              "available": false,
+              "category": "Outerwear"
+            },
+            {
+              "id": 3,
+              "brand": "H&M",
+              "model": "Cotton Ribbed Tank",
+              "price": 1500,
+              "description": "Soft, ribbed cotton tank top that goes with everything.",
+              "image": "https://cdn.shopify.com/s/files/1/1056/1394/files/81a1b773-7e8d-4cf3-8e89-ca0010113489.jpg?v=1747114578&width=760&height=1014&crop=center",
+              "available": true,
+              "category": "Casual"
+            },
+            {
+              "id": 5,
+              "brand": "Everlane",
+              "model": "The Soft Cotton Crew",
+              "price": 628,
+              "description": "Classic crew-neck t-shirt made with soft cotton fabric.",
+              "image": "https://cdn.shopify.com/s/files/1/1056/1394/files/25715005-cbff-4b5d-9848-04776900e684.jpg?v=1747113284&width=760&height=1014&crop=center",
+              "available": true,
+              "category": "Casual"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

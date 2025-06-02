@@ -11,7 +11,9 @@ import './Header.css';
 const Header = () => {
   return (
     <div>
-      <header className="border-bottom shadow-sm">
+     
+      <section className="banner">
+         <header className="border-bottom shadow-sm bg-white">
         {/* Top Row */}
         <div className="container py-4 d-flex justify-content-between align-items-center">
           {/* Logo */}
@@ -41,7 +43,10 @@ const Header = () => {
           </div>
         </div>
         {/* Nav Row */}
-        <nav className="navbar navbar-expand-lg bg-white border-top">
+        
+      </header>
+
+      <nav className="navbar navbar-expand-lg  border-top">
           <div className="container">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
               <span className="navbar-toggler-icon" />
@@ -79,17 +84,14 @@ const Header = () => {
             </div>
           </div>
         </nav>
-      </header>
 
-      <section className="banner">
-        
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active bg-dark" aria-current="true" aria-label="Slide 1" />
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1} className="bg-dark" aria-label="Slide 2" />
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className="carousel-item active" >
               <div className="row align-items-center banner-img ">
                 <div style={{ paddingLeft: 100 }} className="contaier py-4 d-flex  justify-content-between align-items-center">
                   <div className="col-md-6 text-center text-md-start">
