@@ -9,3 +9,44 @@
 .card:hover .product-image {
   transform: scale(1.05);
 }
+
+/* General button style */
+.btn {
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 8px 16px;
+}
+
+/* Hover effect for primary and outline-primary */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Hover effect for secondary and outline-secondary */
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+  border-color: #6c757d;
+  transform: scale(1.05);
+}
+
+/* Cool shadows */
+.btn:focus,
+.btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
