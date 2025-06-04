@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.challan-form, .challan-result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+input, select {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.challan-form, .challan-result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+input, select {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+.challan-history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.challan-history ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.challan-history li {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.challan-result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}

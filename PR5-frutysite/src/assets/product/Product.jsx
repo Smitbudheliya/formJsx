@@ -6,10 +6,11 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [filteredGender, setFilteredGender] = useState("All");
   const [selectedCategory, setSelectedCategory] = useState("All");
-
   const [categories, setCategories] = useState([]);
-  console.log(categories);
 
+  console.log("Categories:", categories);
+
+  // Fetching and flattening product data
   useEffect(() => {
     const men = productData.product[0].men[0];
     const women = productData.product[0].women[0];
@@ -22,11 +23,8 @@ const ProductList = () => {
     const menProducts = flattenProducts(men, "Men");
     const womenProducts = flattenProducts(women, "Women");
 
-
     const combinedProducts = [...menProducts, ...womenProducts];
     setProducts(combinedProducts);
-
-
   }, []);
 
   // Update categories whenever gender changes
@@ -36,19 +34,18 @@ const ProductList = () => {
       setSelectedCategory("All");
     } else {
       const genderProducts = products.filter((p) => p.gender === filteredGender);
-      console.log(genderProducts);
+      console.log("Filtered products for gender:", filteredGender, genderProducts);
 
+      // Get unique categories for filtered gender
       const uniqueCategories = Array.from(new Set(genderProducts.map((p) => p.category)));
-
+      console.log("Unique categories found:", uniqueCategories);
 
       setCategories(uniqueCategories);
-      setSelectedCategory("All");
-    
-      
+      setSelectedCategory("All"); // Reset to "All" when changing gender
     }
   }, [filteredGender, products]);
 
-  // Filter products
+  // Filter products based on gender and selected category
   const displayedProducts = products.filter((p) => {
     const genderMatch = filteredGender === "All" || p.gender === filteredGender;
     const categoryMatch = selectedCategory === "All" || p.category === selectedCategory;
@@ -82,10 +79,6 @@ const ProductList = () => {
             All
           </button>
           {categories.map((cat) => (
-            console.log(`Category: ${cat}`),
-            console.log(`Selected Category: ${selectedCategory}`),
-            
-
             <button
               key={cat}
               className={`btn ${selectedCategory === cat ? "btn-secondary" : "btn-outline-secondary"}`}
