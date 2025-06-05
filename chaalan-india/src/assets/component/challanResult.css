@@ -1,0 +1,27 @@
+/* ChallanUI.css */
+.colorful-card {
+  background: linear-gradient(135deg, #0f0f103b 0%, #75797a2f 100%);
+  color: rgb(9, 9, 9)!important;
+  border-radius: 20px;
+  
+}
+
+.cool-btn {
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.cool-btn:hover {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  color: #000;
+  transform: scale(1.02);
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f8ff;
+}

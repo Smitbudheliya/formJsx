@@ -1,0 +1,73 @@
+/* ChallanForm.css
+.form-bg {
+  background-image: url('https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_640.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;                  
+    
+}
+
+.glass-card {
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+
+  backdrop-filter: blur(12px);
+  background: rgba(16, 15, 15, 0.078);
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.cool-btn {
+  font-weight: bold;
+  transition: 0.3s ease;
+  border-radius: 50px;
+}
+
+.cool-btn:hover {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: black;
+  transform: scale(1.03);
+} */
+/* ChallanForm.css */
+
+.form-bg {
+   background-image: url('https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_640.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.cool-btn {
+  font-weight: bold;
+  transition: 0.3s ease;
+  border-radius: 50px;
+}
+
+.cool-btn:hover {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: black;
+  transform: scale(1.03);
+}

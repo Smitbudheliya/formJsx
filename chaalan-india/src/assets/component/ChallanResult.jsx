@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./challanResult.css"; // Assuming you have a Challan.css for custom styles
+
+// Fine amounts for different violations
+
 
 const violationFine = {
   overspeeding: 1000,
@@ -27,23 +31,23 @@ const Challan = () => {
   return (
     <div className="container mt-5">
       {/* Form Card */}
-      <div className="card shadow-sm border-0 rounded-4 p-4">
-        <h4 className="mb-4 text-center">Enter Vehicle and Violation Details</h4>
+      <div className="card shadow colorful-card border-0 rounded-4 p-4">
+        <h4 className="mb-4">🚔 Enter Vehicle & Violation Details</h4>
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label className="form-label">Vehicle Number</label>
+          <div className="mb-3 ">
+            <label className="form-label ">Vehicle Number</label>
             <input
               type="text"
-              className="form-control"
+              className="form-control shadow-sm"
               value={vehicleNumber}
               onChange={(e) => setVehicleNumber(e.target.value)}
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3 ">
             <label className="form-label">Violation Type</label>
             <select
-              className="form-select"
+              className="form-select shadow-sm"
               value={violationType}
               onChange={(e) => setViolationType(e.target.value)}
               required
@@ -55,20 +59,20 @@ const Challan = () => {
               <option value="nohelmet">No Helmet</option>
             </select>
           </div>
-          <button type="submit" className="btn btn-primary w-100">
-            Add Challan
+          <button type="submit" className="btn btn-light w-100 fw-bold shadow cool-btn">
+            ➕ Add Challan
           </button>
         </form>
       </div>
 
       {/* Table Card */}
       {challanList.length > 0 && (
-        <div className="card mt-4 shadow-sm border-0 rounded-4">
+        <div className="card mt-4 colorful-card shadow-lg border-0 rounded-4">
           <div className="card-body p-4">
-            <h5 className="card-title text-center mb-4">Challan History</h5>
+            <h5 className="card-title text-center mb-4 text-primary">📋 Challan History</h5>
             <div className="table-responsive">
-              <table className="table table-bordered table-hover">
-                <thead className="table-light">
+              <table className="table table-bordered table-hover align-middle text-center">
+                <thead className="table-primary">
                   <tr>
                     <th>#</th>
                     <th>Vehicle Number</th>
@@ -82,7 +86,7 @@ const Challan = () => {
                       <td>{index + 1}</td>
                       <td>{item.vehicleNumber}</td>
                       <td className="text-capitalize">{item.violationType}</td>
-                      <td>₹{violationFine[item.violationType]}</td>
+                      <td className="fw-semibold text-danger">₹{violationFine[item.violationType]}</td>
                     </tr>
                   ))}
                 </tbody>
