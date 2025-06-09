@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import './style.css';
 
 const EditService = ({ services, setServices }) => {
   const { id } = useParams();
@@ -32,7 +33,7 @@ const EditService = ({ services, setServices }) => {
   return (
     <div>
       <h2>Edit Service</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <div className="mb-3">
           <label className="form-label">Service Name</label>
           <input

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <nav style={{width:1680}} className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <Link className="navbar-brand" to="/">Service Manager</Link>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav ms-auto">

@@ -1,0 +1,11 @@
+.back{
+    background-image: url('https://dubaimonsters.com/wp-content/uploads/2018/04/High-Resolution-Background-Images.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+    height: 100vh;
+}
+.container{
+    max-width: 1680px;
+    padding-left: 0px!important;
+}
