@@ -2,28 +2,41 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const NewPost = ({ addPost }) => {
-  const [form, setForm] = useState({ title: '', content: '', author: '' });
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [category, setCategory] = useState('');
   const navigate = useNavigate();
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const date = new Date().toISOString().split('T')[0];
-    addPost({ ...form, date });
+    if (!title || !content) return;
+    addPost({ title, content, category });
     navigate('/');
   };
 
   return (
     <div>
-      <h3>Add New Blog Post</h3>
+      <h3>Add New Post</h3>
       <form onSubmit={handleSubmit}>
-        <input className="form-control mb-2" type="text" name="title" placeholder="Title" onChange={handleChange} required />
-        <input className="form-control mb-2" type="text" name="author" placeholder="Author" onChange={handleChange} required />
-        <textarea className="form-control mb-3" name="content" rows="5" placeholder="Content" onChange={handleChange} required />
-        <button className="btn btn-primary">Post</button>
+        <input
+          className="form-control mb-2"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <textarea
+          className="form-control mb-2"
+          placeholder="Content"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+        />
+        <input
+          className="form-control mb-2"
+          placeholder="Category (optional)"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        />
+        <button className="btn btn-success" type="submit">Add Post</button>
       </form>
     </div>
   );

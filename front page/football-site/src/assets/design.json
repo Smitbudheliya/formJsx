@@ -1,0 +1,26 @@
+
+{
+  "designs": [
+    {
+      "id": "1",
+      "name": "Modern Living Room",
+      "description": "A sleek and contemporary living room design with minimalist furniture.",
+      "image": "modern-living-room.jpg",
+      "category": "Living Room"
+    },
+    {
+      "id": "2",
+      "name": "Rustic Kitchen",
+      "description": "A warm and inviting kitchen with rustic wooden elements.",
+      "image": "rustic-kitchen.jpg",
+      "category": "Kitchen"
+    },
+    {
+      "id": "3",
+      "name": "Elegant Bedroom",
+      "description": "A luxurious bedroom design with elegant furnishings and soft lighting.",
+      "image": "elegant-bedroom.jpg",
+      "category": "Bedroom"
+    }
+  ]
+}

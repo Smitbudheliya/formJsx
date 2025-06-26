@@ -1,0 +1,10 @@
+body {
+
+  font-family: sans-serif;
+  padding: 20px;
+  background: #a2ece6;
+}
+textarea {
+  resize: none;
+  height: 80px;
+}
