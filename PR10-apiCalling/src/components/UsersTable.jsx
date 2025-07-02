@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchUsers } from '../features/users/usersSlice';
 
-function UsersTable() {
-  const [users, setUsers] = useState([]);
+const UsersTable = () => {
+  const dispatch = useDispatch();
+  const { data: users, loading, error } = useSelector(state => state.users);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users") // ✅ fetch used here
-      .then((res) => res.json())
-      .then((data) => setUsers(data))
-      .catch((err) => console.error(err));
-  }, []);
+    dispatch(fetchUsers());
+  }, [dispatch]);
 
   return (
-    <div>
-      <h4>Users (Fetched with fetch API)</h4>
+    <div className="mt-4">
+      <h4>Users (with fetch + Redux Thunk)</h4>
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
       <div className="table-responsive">
-        <table className="table table-bordered table-hover table-striped">
+        <table className="table table-bordered table-hover">
           <thead className="table-dark">
             <tr>
               <th>Name</th>
@@ -37,6 +39,6 @@ function UsersTable() {
       </div>
     </div>
   );
-}
+};
 
 export default UsersTable;
