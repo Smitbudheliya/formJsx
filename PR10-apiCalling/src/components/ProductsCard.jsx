@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../features/products/productsSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchProducts } from '../actions/productActions.js';
 
 const ProductsCard = () => {
   const dispatch = useDispatch();
-  const { data: products, loading, error } = useSelector(state => state.products);
+  const { loading, data: products, error } = useSelector((state) => state.products);
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
   return (
-    <div className="mt-4">
-      <h4>Products (with axios + Redux Thunk)</h4>
+    <div>
+      <h4 className="mt-4">Products (Fetched with Axios)</h4>
       {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-        {products.map(product => (
+      {error && <p className="text-danger">{error}</p>}
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+        {products.map((product) => (
           <div className="col" key={product.id}>
             <div className="card h-100">
               <img

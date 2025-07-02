@@ -1,0 +1,61 @@
+/* src/components/ContactForm.css */
+.contact-container {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffcccc;
+  overflow: hidden;
+  font-family: sans-serif;
+  margin: 50px;
+}
+
+.contact-left {
+  background: #e53935;
+  color: white;
+  padding: 40px;
+  width: 35%;
+}
+
+.contact-left h2 {
+  margin-bottom: 20px;
+}
+
+.contact-right {
+  padding: 40px;
+  width: 65%;
+}
+
+.contact-right h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  border: 1px solid #e53935;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background: #e53935;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #d32f2f;
+}

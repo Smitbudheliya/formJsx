@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchUsers } from '../features/users/usersSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchUsers } from '../actions/userActions.js';
 
 const UsersTable = () => {
   const dispatch = useDispatch();
-  const { data: users, loading, error } = useSelector(state => state.users);
+  const { loading, data: users, error } = useSelector((state) => state.users);
 
   useEffect(() => {
     dispatch(fetchUsers());
   }, [dispatch]);
 
   return (
-    <div className="mt-4">
-      <h4>Users (with fetch + Redux Thunk)</h4>
+    <div>
+      <h4>Users (Fetched with fetch)</h4>
       {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
+      {error && <p className="text-danger">{error}</p>}
       <div className="table-responsive">
         <table className="table table-bordered table-hover">
           <thead className="table-dark">
@@ -26,7 +26,7 @@ const UsersTable = () => {
             </tr>
           </thead>
           <tbody>
-            {users.map(user => (
+            {users.map((user) => (
               <tr key={user.id}>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
