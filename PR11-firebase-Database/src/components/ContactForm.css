@@ -1,14 +1,14 @@
 /* src/components/ContactForm.css */
 .contact-container {
   display: flex;
-  background: #fff;
+  background: #d30a0a;
   border-radius: 10px;
   box-shadow: 0 0 20px #ffcccc;
   overflow: hidden;
   font-family: sans-serif;
   margin: 50px;
-}
 
+}
 .contact-left {
   background: #e53935;
   color: white;
