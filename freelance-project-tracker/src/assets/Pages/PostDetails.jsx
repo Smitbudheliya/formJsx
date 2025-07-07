@@ -18,3 +18,4 @@ const PostDetails = () => {
     </div>
   ) : <p>Loading...</p>;
 };
+export default PostDetails;

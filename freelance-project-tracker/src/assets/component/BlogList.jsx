@@ -1,22 +1,25 @@
-const BlogList = ({ posts, search, category }) => {
-  const filtered = posts.filter(p =>
-    p.title.toLowerCase().includes(search.toLowerCase()) &&
-    (category ? p.category === category : true)
-  );
+import BlogPost from './BlogPost';
 
-  return (
-    <div className="row">
-      {filtered.map(post => (
-        <div className="col-md-4 mb-3" key={post.id}>
-          <div className="card">
-            <div className="card-body">
-              <h5>{post.title}</h5>
-              <p>{post.summary.slice(0, 100)}...</p>
-              <a href={`/post/${post.id}`} className="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
+const BlogList = ({ users, posts }) => (
+  <div>
+    <h2>👥 Users</h2>
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>
+          <strong>{user.username}</strong> — Role: {user.role}
+        </li>
+      ))}
+    </ul>
+
+    <hr />
+
+    <h2>📝 Blog Posts</h2>
+    <div>
+      {posts.map((JJpost) => (
+        <BlogPost key={post.id} post={post} />
       ))}
     </div>
-  );
-};
+  </div>
+);
+
+export default BlogList;

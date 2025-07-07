@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "How Instagram Algorithm Works",
+      "content": "The Instagram algorithm prioritizes content based on engagement...",
+      "author": "admin",
+      "category": "Social Media",
+      "likes": 10,
+      "comments": [
+        {
+          "id": 1,
+          "user": "user1",
+          "text": "Great post!"
+        }
+      ],
+      "createdAt": "2025-07-03T10:00:00Z"
+    }
+  ]
+}
+   
