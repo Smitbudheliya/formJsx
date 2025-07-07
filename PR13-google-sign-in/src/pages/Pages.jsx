@@ -1,6 +1,8 @@
 // import pages css
 import './pages.css';
-import { auth, GoogleAuthProvider } from '../../fireBase'
+import { auth, Googleauthprovider } from '../../fireBase'
+import { Link } from 'react-router-dom';
+import { signInWithPopup } from 'firebase/auth';
 
 
 
@@ -9,7 +11,7 @@ const Pages = () => {
 
     const handlelogin = async () => {
         try {
-            let user = await singwithPopup(auth, GoogleAuthProvider)
+            let user = await signInWithPopup(auth, Googleauthprovider)
                 console.log(user);
                 
         }
@@ -19,11 +21,11 @@ const Pages = () => {
 
         }
 
-    }
-
+    }   
+<Link to="/"></Link>
     return (
-        <div>
-            <header style={{ width: "1351px" }} className="navbar sticky-top bg-dark text-white py-2">
+        <div className="container">
+            <header  className="navbar sticky-top bg-dark text-white py-2">
                 <div className="container d-flex justify-content-between align-items-center">
                     <nav>
                         <ul className="nav">
@@ -38,7 +40,7 @@ const Pages = () => {
                             </li>
                         </ul>
                     </nav>
-                    <button onClick={() => handlelogin()} className="btn btn-outline-light">Google</button>
+                    <button onClick={() => handlelogin()} className="btn btn-outline-light bg-light text-dark">Google</button>
                 </div>
             </header>
 
