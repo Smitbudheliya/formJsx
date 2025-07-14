@@ -1,0 +1,4 @@
+.banner-img {
+  height: 100vh; /* Full screen height */
+  object-fit: cover; /* Keeps image proportions and covers entire slide */
+}

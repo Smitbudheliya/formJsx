@@ -1,6 +1,3 @@
-// components/ProductInfo.jsx
-import React from "react";
-
 const features = [
   {
     id: 1,

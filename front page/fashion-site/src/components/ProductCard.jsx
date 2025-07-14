@@ -1,17 +1,65 @@
-// components/ProductCard.jsx
+// components/ProductSection.jsx
 import React from "react";
 
-export default function ProductCard({ product }) {
+
+
+// Product data
+const products = [
+  {
+    id: 1,
+    title: "Denim Jacket",
+    image: "/images/denim-jacket.jpg",
+    price: 59.99,
+    oldPrice: 89.99,
+  },
+  {
+    id: 2,
+    title: "Summer Dress",
+    image: "/images/summer-dress.jpg",
+    price: 39.99,
+    oldPrice: 59.99,
+  },
+  {
+    id: 3,
+    title: "Running Shoes",
+    image: "/images/shoes.jpg",
+    price: 79.99,
+    oldPrice: 109.99,
+  },
+];
+
+
+// ProductCard Component
+function ProductCard({ product }) {
   return (
-    <div className="bg-gray-50 p-4 rounded-lg shadow hover:shadow-md transition">
+    <div className="bg-white border rounded p-3 shadow-sm h-100">
       <img
         src={product.image}
         alt={product.title}
-        className="rounded-md mb-4 w-full h-60 object-cover"
+        className="img-fluid rounded mb-3"
+        style={{ height: "250px", objectFit: "cover", width: "100%" }}
       />
-      <h3 className="font-medium text-lg">{product.title}</h3>
-      <p className="text-sm text-gray-500 line-through">${product.oldPrice}</p>
-      <p className="text-pink-600 font-semibold">${product.price}</p>
+      <h5 className="fw-semibold">{product.title}</h5>
+      <p className="text-muted text-decoration-line-through">${product.oldPrice}</p>
+      <p className="text-danger fw-bold">${product.price}</p>
+    </div>
+  );
+}
+
+// Main Section Component
+export default function ProductSection() {
+  return (
+    <div className="container my-5">
+
+      {/* Product Section */}
+      <h2 className="mb-4 text-center">Featured Products</h2>
+      <div className="row g-4">
+        {products.map((product) => (
+          <div className="col-md-4" key={product.id}>
+            <ProductCard product={product} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

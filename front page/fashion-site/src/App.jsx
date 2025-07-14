@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import BestSeller from "./components/BestSeller";
 import Categories from "./components/Categories";
 import ProductInfo from "./components/ProductInfo";
+import ProductCard from "./components/ProductCard";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <BestSeller />
         <Categories />
         <ProductInfo />
+        <ProductCard />
       </div>
     </Router>
   );

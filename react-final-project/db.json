@@ -1,0 +1,152 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "type": "Deluxe",
+      "available": true,
+      "features": "AC, TV, WiFi",
+      "price": 3000
+    },
+    {
+      "id": 2,
+      "type": "Standard",
+      "available": true,
+      "features": "Fan, TV",
+      "price": 1800
+    },
+    {
+      "id": 3,
+      "type": "Suite",
+      "available": false,
+      "features": "AC, TV, WiFi, Mini Fridge",
+      "price": 5000
+    },
+    {
+      "id": 4,
+      "type": "Premium",
+      "available": true,
+      "features": "AC, TV, WiFi, Bathtub",
+      "price": 4000
+    },
+    {
+      "id": 5,
+      "type": "Deluxe",
+      "available": false,
+      "features": "AC, TV",
+      "price": 3200
+    },
+    {
+      "id": 6,
+      "type": "Standard",
+      "available": true,
+      "features": "Fan",
+      "price": 1500
+    },
+    {
+      "id": 7,
+      "type": "Suite",
+      "available": true,
+      "features": "AC, TV, WiFi",
+      "price": 4800
+    },
+    {
+      "id": 8,
+      "type": "Premium",
+      "available": false,
+      "features": "AC, TV, WiFi, Kitchen",
+      "price": 4500
+    },
+    {
+      "id": 9,
+      "type": "Deluxe",
+      "available": true,
+      "features": "AC, WiFi",
+      "price": 3100
+    },
+    {
+      "id": 10,
+      "type": "Standard",
+      "available": false,
+      "features": "Fan, TV",
+      "price": 1700
+    },
+    {
+      "id": 11,
+      "type": "Suite",
+      "available": true,
+      "features": "AC, WiFi, Mini Fridge",
+      "price": 5200
+    },
+    {
+      "id": 12,
+      "type": "Premium",
+      "available": true,
+      "features": "AC, TV, Balcony",
+      "price": 4300
+    },
+    {
+      "id": 13,
+      "type": "Deluxe",
+      "available": false,
+      "features": "AC, TV, WiFi",
+      "price": 3050
+    },
+    {
+      "id": 14,
+      "type": "Standard",
+      "available": true,
+      "features": "Fan",
+      "price": 1600
+    },
+    {
+      "id": 15,
+      "type": "Suite",
+      "available": false,
+      "features": "AC, Bathtub",
+      "price": 4900
+    },
+    {
+      "id": 16,
+      "type": "Premium",
+      "available": true,
+      "features": "AC, TV, WiFi, Sea View",
+      "price": 4700
+    },
+    {
+      "id": 17,
+      "type": "Deluxe",
+      "available": true,
+      "features": "AC, TV",
+      "price": 2950
+    },
+    {
+      "id": 18,
+      "type": "Standard",
+      "available": false,
+      "features": "Fan, TV",
+      "price": 1650
+    },
+    {
+      "id": 19,
+      "type": "Suite",
+      "available": true,
+      "features": "AC, TV, WiFi, Bathtub",
+      "price": 5100
+    },
+    {
+      "id": 20,
+      "type": "Premium",
+      "available": true,
+      "features": "AC, TV, WiFi, Kitchen, Balcony",
+      "price": 4600
+    },
+    {
+      "id": 21,
+      "type": "Deluxe",
+      "available": true,
+      "features": "AC, TV, WiFi",
+      "price": 3100
+    }
+  ],
+  "reservations": []
+}

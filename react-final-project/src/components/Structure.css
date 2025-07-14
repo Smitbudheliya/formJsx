@@ -1,0 +1,28 @@
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+.banner-text {
+  z-index: 2;
+  
+}
+
+.banner {
+  overflow: hidden;
+}
+.rooms{
+  background-color:#16150d4f;
+}
+#rooms{
+  background-color: #16150d00!important;
+}
+#contact{
+  background-color: rgb(255, 255, 255)!important;
+}
